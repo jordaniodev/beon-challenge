@@ -19,7 +19,7 @@ describe('PlayComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('should test if the answer selected is blue after select', () => {
     expect(component).toBeTruthy();
   });
 });

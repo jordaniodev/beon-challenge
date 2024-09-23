@@ -21,6 +21,7 @@
             <button (click)="onAnswerClicked(question._id, answer._id)"
                     [class.bg-primary-default]="answer._id !== question.selectedId"
                     [class.bg-secondary-default]="answer._id === question.selectedId"
+                    [attr.data-testid]="'answer-' + question._id"
                     class="text-off-white rounded-xl w-full p-4 mb-4">
               {{ answer.text }}
             </button>
