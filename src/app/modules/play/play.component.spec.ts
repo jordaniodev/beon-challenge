@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { PlayComponent } from './play.component';
+import { By } from '@angular/platform-browser';
 
 describe('PlayComponent', () => {
   let component: PlayComponent;
@@ -21,5 +22,6 @@ describe('PlayComponent', () => {
 
   it('should test if the answer selected is blue after select', () => {
     expect(component).toBeTruthy();
+    const element = fixture.debugElement.query(By.css('[data-testid=""]'))
   });
 });
